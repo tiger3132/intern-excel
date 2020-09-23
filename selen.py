@@ -561,11 +561,11 @@ path = "/opt/PplaProject/clean.xlsx"
 
 #appleid
 app_mail = "fssfinansiahero@gmail.com"
-app_pass = "FSSadmin"
+app_pass = ""
 
 #googleplay
 g_mail = "ebizfss2@hotmail.com"
-g_pass = "Ebiz1234"
+g_pass = ""
 
 #Access webdriver option
 options = Options()
