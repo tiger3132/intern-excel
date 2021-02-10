@@ -2,7 +2,7 @@
 
 ## Description
 
-A python program created by myself(Kathapet Nawongs) in Finansia Syrus. Crontab (not shown in github) only runs main.py every day including weekends using 30 18 * * */1.
+Python program created by Kathapet Nawongs in Finansia Syrus. This program aims to fill in a spread sheet with data related to Finansia Syrus. Crontab (not shown in github) only runs main.py every day including weekends.
 
 ## Python file features
 
@@ -16,8 +16,8 @@ Automate the process of logging in for getting Finansia's Google Play and App St
 
 ### mail.py
 
-For sending an automated excel file to the Finansia senior staff. When there is an error in the program it sends a simple mail with an error message contained in it.
+For sending the complete automated excel file to the Finansia senior staff. When there is an error in the program it sends a simple mail with an error message contained in it.
 
 ### main.py
 
-Imports the functions from scan.py, selen.py and mail.py and arrange them for the tasks to work in a sequential manner. Which means instead of having to run and use crontab on three python files, only main.py runs. 
+Imports the functions from scan.py, selen.py and mail.py and arrange them for the tasks to work in a sequential manner. 
