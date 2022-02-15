@@ -2,7 +2,7 @@
 
 ## Description
 
-Python program created by Kathapet Nawongs in Finansia Syrus. This program aims to fill in a spread sheet with data related to Finansia Syrus. Crontab (not shown in github) only runs main.py every day including weekends.
+A python program created for Finansia Syrus. This program aims to fill in a spread sheet with data related to Finansia Syrus. Crontab (not shown in github) only runs main.py every day including weekends.
 
 ## Python file features
 
