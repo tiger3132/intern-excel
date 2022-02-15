@@ -10,12 +10,7 @@ from subprocess import run
 
 #Import date
 from datetime import datetime
-            
-"""
-kathapet.n@fnsyrus.com
-phutana.k@fnsyrus.com
-nattaporn.b@fnsyrus.com
-"""
+
 #Function
 """
 Description: Send email to nattaporn at 18:30 with the excel file attached
@@ -26,10 +21,10 @@ def send_attachment():
     msg = MIMEMultipart() 
       
     # storing the senders email address   
-    msg['From'] = "phutana.k@fnsyrus.com"
+    msg['From'] = ""
       
     # storing the receivers email address  
-    msg['To'] = "kathapet.n@fnsyrus.com"
+    msg['To'] = ""
 
     # storing the subject  
     msg['Subject'] = "Automated Daily Operation Sheet"
@@ -62,8 +57,8 @@ def send_attachment():
     # creates SMTP session 
     s = smtplib.SMTP('127.0.0.1', 25) 
 
-    # sending the mail 
-    s.sendmail("phutana.k@fnsyrus.com", "kathapet.n@fnsyrus.com", text) 
+    # sending the mail (to,from, content)
+    s.sendmail("", "", text) 
       
     # terminating the session 
     s.quit()
@@ -80,10 +75,10 @@ def send_error(text):
     msg = MIMEMultipart() 
       
     # storing the senders email address   
-    msg['From'] = "phutana.k@fnsyrus.com" 
+    msg['From'] = "" 
       
     # storing the receivers email address  
-    msg['To'] = "kathapet.n@fnsyrus.com"
+    msg['To'] = ""
 
     # storing the subject  
     msg['Subject'] = "Error in automated python code"
@@ -99,6 +94,6 @@ def send_error(text):
     # creates SMTP session 
     s = smtplib.SMTP('127.0.0.1', 25) 
 
-    # sending the mail 
-    s.sendmail("phutana.k@fnsyrus.com" , "kathapet.n@fnsyrus.com", text) 
+    # sending the mail (to, from, content)
+    s.sendmail("" , "", text) 
     
