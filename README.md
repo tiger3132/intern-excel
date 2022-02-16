@@ -8,16 +8,16 @@ A python program created for Finansia Syrus. This program aims to fill in a spre
 
 ### scan.py
 
-Extracts data from the company's SQL database, output files and subprocesses. Regex is used to extract the data.
+Creates the excel file. Write to the file the data extracted from the company's SQL database that are associated to customers' interaction inside Finansia's mobile and web application. Regex is used to extract the data needed from the whole string. 
 
 ### selen.py
 
-Automate the process of logging in for getting Finansia's Google Play and App Store Finansia's app information using Selenium. 
+Selenium is used to traverse Finansia's Google Play Insight and App Analytics website to obtain other data related to the customers' usage of the mobile app like Android download count. The login system have to be bypassed in order to reach the needed data. 
 
 ### mail.py
 
-For sending the complete automated excel file to the Finansia senior staff. When there is an error in the program it sends a simple mail with an error message contained in it.
+This sends an email with the completed excel file attached to it. When there is an error in the program a simple mail with an error message is sent instead.
 
 ### main.py
 
-Imports the functions from scan.py, selen.py and mail.py and arrange them for the tasks to work in a sequential manner. 
+This python file is triggered by crontab. It first imports the functions from scan.py, selen.py and mail.py, and then arrange them sequentially so that individual tasks works at a particular period. For instance, the functions from scan.py and selen.py should be invoked before the send_attachment function from mail.py.  
